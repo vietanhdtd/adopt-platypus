@@ -112,3 +112,30 @@ footer {
     letter-spacing: 1px;
     padding-bottom: 20px;
 }
+
+
+/* environment-style */
+
+.card-body-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* employees-style */
+
+.employee-name {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.no-border {
+    border: none;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 200px;
+}
