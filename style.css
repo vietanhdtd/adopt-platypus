@@ -55,26 +55,26 @@ footer {
 }
 
 .nav-linkto {
-    color: #00cece !important;
-    font-weight: bold;
+    color: #F09048 !important;
+    font-weight: 400;
     transition: all 0.3s;
 }
 
 .nav-linkto:hover {
-    color: #006060 !important;
+    color: #189090!important;
 }
 
 .btn-nav {
-    color: #00cece;
-    border: 2px solid #00cece;
+    color: #F09048;
+    border: 2px solid #F09048;
     transition: all 0.3s;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .btn-nav:hover {
     color: white;
-    border-color: #006060;
-    background-color: #006060;
+    border-color: #189090;
+    background-color: #189090;
 }
 
 .search-icon {
@@ -91,7 +91,7 @@ footer {
     align-items: center;
     position: relative;
     top: 200px;
-    color: #D86000;
+    color: #F09048;
     border: 2px solid rgba(48, 24, 24, .9);
     background-color: rgba(48, 24, 24, .9);
     padding: 20px 0px;
@@ -102,7 +102,8 @@ footer {
 .header-title {
     font-size: 60px;
     font-family: 'Sanomat Grab Web Regular', sans-serif;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    color: #D86000;
 }
 
 .header-subtitle {
@@ -138,4 +139,16 @@ footer {
 .avatar {
     border-radius: 50%;
     width: 200px;
+}
+
+#header-button {
+    font-family: 'Sanomat Grab Web Regular', sans-serif;
+    font-size: 1.146em;
+    font-weight: 400;
+    color: #D86000;
+    border-color: #D86000;
+}
+
+#header-button:hover {
+    background-color: black
 }
