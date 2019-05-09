@@ -30,14 +30,17 @@ header {
 }
 
 .environment {
-    background-color: black;
     min-height: 300px;
-    color: white;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .employees {
-    background-color: white;
     min-height: 300px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
 }
 
 footer {
