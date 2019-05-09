@@ -82,3 +82,35 @@ footer {
 .search-icon {
     border: none;
 }
+
+
+/* header style */
+
+.header-style {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 200px;
+    color: #D86000;
+    border: 2px solid rgba(48, 24, 24, .9);
+    background-color: rgba(48, 24, 24, .9);
+    padding: 20px 0px;
+    margin: 0px auto;
+    width: 60rem;
+}
+
+.header-title {
+    font-size: 60px;
+    font-family: 'Sanomat Grab Web Regular', sans-serif;
+    padding-bottom: 20px;
+}
+
+.header-subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Sanomat Grab Web Regular', sans-serif;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
