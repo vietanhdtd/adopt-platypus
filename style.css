@@ -13,8 +13,6 @@ body {
 }
 
 nav {
-    background-color: ;
-    min-height: ;
     color: white;
 }
 
@@ -30,14 +28,17 @@ header {
 }
 
 .environment {
-    background-color: black;
     min-height: 300px;
-    color: white;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .employees {
-    background-color: white;
     min-height: 300px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
 }
 
 footer {
@@ -54,31 +55,32 @@ footer {
 }
 
 .nav-linkto {
-    color: #00cece !important;
-    font-weight: bold;
+    color: #F09048 !important;
+    font-weight: 400;
     transition: all 0.3s;
 }
 
 .nav-linkto:hover {
-    color: #006060 !important;
+    color: #189090!important;
 }
 
 .btn-nav {
-    color: #00cece;
-    border: 2px solid #00cece;
+    color: #F09048;
+    border: 2px solid #F09048;
     transition: all 0.3s;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .btn-nav:hover {
     color: white;
-    border-color: #006060;
-    background-color: #006060;
+    border-color: #189090;
+    background-color: #189090;
 }
 
 .search-icon {
     border: none;
 }
+
 
 /* header style */
 
@@ -89,7 +91,7 @@ footer {
     align-items: center;
     position: relative;
     top: 200px;
-    color: #D86000;
+    color: #F09048;
     border: 2px solid rgba(48, 24, 24, .9);
     background-color: rgba(48, 24, 24, .9);
     padding: 20px 0px;
@@ -100,7 +102,8 @@ footer {
 .header-title {
     font-size: 60px;
     font-family: 'Sanomat Grab Web Regular', sans-serif;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    color: #D86000;
 }
 
 .header-subtitle {
@@ -139,6 +142,7 @@ li:hover{
     margin-top: 50px;
 }
 
+<<<<<<< HEAD
 .social-media-btn {
     justify-content: center;
     display: flex;
@@ -163,4 +167,42 @@ li:hover{
 }
 a:hover {
     text-decoration: none;
+=======
+/* environment-style */
+
+.card-body-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* employees-style */
+
+.employee-name {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.no-border {
+    border: none;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 200px;
+}
+
+#header-button {
+    font-family: 'Sanomat Grab Web Regular', sans-serif;
+    font-size: 1.146em;
+    font-weight: 400;
+    color: #D86000;
+    border-color: #D86000;
+}
+
+#header-button:hover {
+    background-color: black
+>>>>>>> 134d7a8dedcc21a84e6046dc21188c6fdfb55215
 }
