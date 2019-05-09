@@ -21,6 +21,12 @@ nav {
 header {
     background-color: white;
     min-height: 400px;
+    background-image: url("img/platypus-hero2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 650px;
 }
 
 .environment {
@@ -44,7 +50,7 @@ footer {
 /*nav-style*/
 
 .bg-black {
-    background-color: rgba(48, 24, 24, 1.0);
+    background-color: rgba(48, 24, 24, .8);
 }
 
 .nav-linkto {
