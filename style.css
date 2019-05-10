@@ -1,3 +1,4 @@
+
 /* page-structure */
 
 * {
@@ -202,3 +203,230 @@ footer a:hover {
 #header-button:hover {
     background-color: black;
 }
+=======
+    /*page-structure*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Sanomat Grab Web Regular', sans-serif;
+        font-size: 1.146em;
+        font-weight: 400;
+    }
+    
+    nav {
+        color: white;
+    }
+    
+    header {
+        background-color: white;
+        min-height: 400px;
+        background-image: url("img/platypus-hero2.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 650px;
+    }
+    
+    .environment {
+        min-height: 300px;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    
+    .employees {
+        min-height: 300px;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    
+    footer {
+        background-color: black;
+        min-height: 100px;
+        color: white;
+    }
+    /*nav-style*/
+    
+    .bg-black {
+        background-color: rgba(48, 24, 24, .8);
+    }
+    
+    .nav-linkto {
+        color: #F09048 !important;
+        font-weight: 400;
+        transition: all 0.3s;
+    }
+    
+    .nav-linkto:hover {
+        color: #189090!important;
+    }
+    
+    .btn-nav {
+        color: #F09048;
+        border: 2px solid #F09048;
+        transition: all 0.3s;
+        font-weight: 400;
+    }
+    
+    .btn-nav:hover {
+        color: white;
+        border-color: #189090;
+        background-color: #189090;
+    }
+    
+    .search-icon {
+        border: none;
+    }
+    
+    .nav-flex {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    /* header style */
+    
+    .header-style {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 200px;
+        color: #F09048;
+        border: 2px solid rgba(48, 24, 24, .9);
+        background-color: rgba(48, 24, 24, .9);
+        padding: 20px 0px;
+        margin: 0px auto;
+        width: 60rem;
+    }
+    
+    .header-title {
+        font-size: 60px;
+        font-family: 'Sanomat Grab Web Regular', sans-serif;
+        padding-bottom: 15px;
+        color: #D86000;
+    }
+    
+    .header-subtitle {
+        font-size: 18px;
+        font-weight: 300;
+        font-family: 'Sanomat Grab Web Regular', sans-serif;
+        letter-spacing: 1px;
+        padding-bottom: 20px;
+    }
+    /* footer style */
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+    
+    li {
+        list-style: none;
+        color: #F09048;
+    }
+    
+    li:hover {
+        color: #D86000;
+        cursor: pointer;
+    }
+    
+    .footer-links {}
+    
+    .list-header {
+        width: 100%;
+        color: #D86000;
+        line-height: 50px;
+        margin-top: 50px;
+    }
+    
+    .social-media-btn {
+        justify-content: center;
+        display: flex;
+        margin-top: 50px;
+    }
+    
+    .fa {
+        margin: 0px 20px 0 0;
+        padding: 15px;
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+        text-align: center;
+        border-radius: 50%;
+        color: #D86000;
+        background-color: #222326;
+        text-decoration: none;
+        transition: all .3;
+    }
+    
+    .fa:hover {
+        color: #F09048;
+        cursor: pointer;
+        background-color: #424242;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    /* environment-style */
+    
+    .card-body-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .environment-title {
+        font-weight: 700;
+        color: white;
+        font-size: 2rem;
+    }
+    
+    .environment-text {
+        font-size: 1.1rem;
+    }
+    
+    .environment-card {
+        background-color: rgba(216, 96, 0, .8);
+        border: none;
+    }
+    /* employees-style */
+    
+    .employee-name {
+        font-size: 2em;
+        font-weight: 600;
+        background-color: aquamarine;
+    }
+    
+    .no-border {
+        border: none;
+    }
+    
+    .avatar {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        border: 8px solid #D86000;
+    }
+    
+    #header-button {
+        font-family: 'Sanomat Grab Web Regular', sans-serif;
+        font-size: 1.146em;
+        font-weight: 400;
+        color: #D86000;
+        border-color: #D86000;
+    }
+    
+    #header-button:hover {
+        background-color: black
+    }
