@@ -5,7 +5,60 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js">
 <!--<![endif]-->
+<style>
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 992px) {
+    .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+    .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    }
+}
+</style>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -81,6 +134,37 @@
                     <p class="card-text environment-text border-top pt-3">it’s actually ILLEGAL to own a platypus, bylaw according to Australian wildlife</p>
                     <p class="card-text environment-text border-top pt-3">Those with a license to handle platypus can rescue them. After rehab platypus are released back into the wild.</p>
                     <a href="# " class="btn btn-primary ">More Info</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: #189090;">
+        <div class="container d-flex justify-content-center pt-5 pb-4">    
+            
+            <h1 style="color:#F09048; font-family: Arial; text-decoration: underline;">RESCUED PLATYPUS</h1>
+        </div>
+        <div class="container d-flex pb-5 pt-2">                
+            <div class="row" style="justify-content: center;"> 
+                <div class="column" id="div-mobile">                
+                    <img src="img/3.jpg" style="width:100%">
+                    <img src="img/8.jpg" style="width:100%">
+                    <img src="img/11.jpg" style="width:100%">
+                    <img src="img/4.jpg" style="width:100%">
+                    <img src="img/12.jpg" style="width:100%">
+                </div>
+                <div class="column" id="div-tablet">
+                    <img src="img/2.jpg" style="width:100%">
+                    <img src="img/6.jpg" style="width:100%">
+                    <img src="img/15.jpg" style="width:100%">
+                    <img src="img/7.jpg" style="width:100%">
+                    <img src="img/10.jpg" style="width:100%">                
+                </div>  
+                <div class="column" id="div-desktop">
+                    <img src="img/1.jpg" style="width:100%">
+                    <img src="img/5.jpg" style="width:100%">
+                    <img src="img/9.jpg" style="width:100%">
+                    <img src="img/13.jpg" style="width:100%">                
+                    <img src="img/15.jpg" style="width:100%">
                 </div>
             </div>
         </div>
