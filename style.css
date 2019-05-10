@@ -62,7 +62,7 @@ footer {
 }
 
 .nav-linkto:hover {
-    color: #189090!important;
+    color: #189090 !important;
 }
 
 .btn-nav {
@@ -82,6 +82,19 @@ footer {
     border: none;
 }
 
+.res-invisible-1 {
+    display: none;
+}
+
+@media screen and (max-width: 989px) {
+    .res-invisible-2 {display: none;}
+    .res-invisible-1 {display: block;}
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
 
 /* header style */
 
@@ -98,13 +111,16 @@ footer {
     padding: 20px 0px;
     margin: 0px auto;
     width: 60rem;
+    height: 18rem;
 }
 
 .header-title {
     font-size: 60px;
     font-family: 'Sanomat Grab Web Regular', sans-serif;
-    padding-bottom: 15px;
-    color: #D86000;
+    padding-bottom: 10px;
+    color: #F09048;
+    text-align: center;
+
 }
 
 .header-subtitle {
@@ -112,7 +128,23 @@ footer {
     font-weight: 300;
     font-family: 'Sanomat Grab Web Regular', sans-serif;
     letter-spacing: 1px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
+    color: #F09048;
+    text-align: center;
+}
+
+#header-button {
+    font-family: 'Sanomat Grab Web Regular', sans-serif;
+    font-size: 1.146em;
+    font-weight: 400;
+    color: ##F09048;
+    border-color: #F09048;
+}
+
+#header-button:hover {
+    color: white;
+    border-color: #189090;
+    background-color: #189090;
 }
 
 /* footer style */
@@ -142,7 +174,6 @@ footer li:hover{
     margin-top: 50px;
     padding-bottom: 70px;
 }
-
 .social-media-btn {
     justify-content: center;
     display: flex;
@@ -165,6 +196,7 @@ footer li:hover{
 footer a:hover {
     text-decoration: none;
 }
+
 
 /* environment-style */
 
