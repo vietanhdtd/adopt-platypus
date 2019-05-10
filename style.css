@@ -1,269 +1,389 @@
-    /*page-structure*/
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+/*page-structure*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sanomat Grab Web Regular', sans-serif;
+    font-size: 1.146em;
+    font-weight: 400;
+}
+
+nav {
+    color: white;
+}
+
+header {
+    background-color: white;
+    min-height: 400px;
+    background-image: url("img/platypus-hero2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+}
+
+.environment-section {
+    background-image: url("img/environment-background.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.environment {
+    min-height: 300px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.employees {
+    min-height: 300px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+footer {
+    background-color: #301818;
+    min-height: 100px;
+    color: white;
+}
+
+
+/*nav-style*/
+
+.bg-black {
+    background-color: rgba(48, 24, 24, .8);
+}
+
+.nav-linkto {
+    color: #F09048 !important;
+    font-weight: 400;
+    transition: all 0.3s;
+}
+
+.nav-linkto:hover {
+    color: #189090!important;
+}
+
+.btn-nav {
+    color: #F09048;
+    border: 2px solid #F09048;
+    transition: all 0.3s;
+    font-weight: 400;
+}
+
+.btn-nav:hover {
+    color: white;
+    border-color: #189090;
+    background-color: #189090;
+}
+
+.search-icon {
+    border: none;
+}
+
+.res-invisible-1 {
+    display: none;
+}
+
+@media screen and (max-width: 989px) {
+    .res-invisible-2 {
+        display: none;
     }
-    
-    body {
-        font-family: 'Sanomat Grab Web Regular', sans-serif;
-        font-size: 1.146em;
-        font-weight: 400;
+    .res-invisible-1 {
+        display: block;
     }
-    
-    nav {
-        color: white;
-    }
-    
-    header {
-        background-color: white;
-        min-height: 400px;
-        background-image: url("img/platypus-hero2.jpg");
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 650px;
-    }
-    
-    .environment-section {
-        background-image: url("img/environment-background.jpg");
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    
-    .environment {
-        min-height: 300px;
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .employees {
-        min-height: 300px;
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-    }
-    
-    footer {
-        background-color: black;
-        min-height: 100px;
-        color: white;
-    }
-    /*nav-style*/
-    
-    .bg-black {
-        background-color: rgba(48, 24, 24, .8);
-    }
-    
-    .nav-linkto {
-        color: #F09048 !important;
-        font-weight: 400;
-        transition: all 0.3s;
-    }
-    
-    .nav-linkto:hover {
-        color: #189090!important;
-    }
-    
-    .btn-nav {
-        color: #F09048;
-        border: 2px solid #F09048;
-        transition: all 0.3s;
-        font-weight: 400;
-    }
-    
-    .btn-nav:hover {
-        color: white;
-        border-color: #189090;
-        background-color: #189090;
-    }
-    
-    .search-icon {
-        border: none;
-    }
-    
-    .nav-flex {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    /* header style */
-    
-    .header-style {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        top: 200px;
-        color: #F09048;
-        border: 2px solid rgba(48, 24, 24, .9);
-        background-color: rgba(48, 24, 24, .9);
-        padding: 20px 0px;
-        margin: 0px auto;
-        width: 60rem;
-    }
-    
-    .header-title {
-        font-size: 60px;
-        font-family: 'Sanomat Grab Web Regular', sans-serif;
-        padding-bottom: 15px;
-        color: #D86000;
-    }
-    
-    .header-subtitle {
-        font-size: 18px;
-        font-weight: 300;
-        font-family: 'Sanomat Grab Web Regular', sans-serif;
-        letter-spacing: 1px;
-        padding-bottom: 20px;
-    }
-    /* footer style */
-    
-    .container {
-        display: flex;
-        justify-content: space-between;
-        margin: auto;
-    }
-    
-    li {
-        list-style: none;
-        color: #F09048;
-    }
-    
-    li:hover {
-        color: #D86000;
-        cursor: pointer;
-    }
-    
-    .footer-links {}
-    
-    .list-header {
-        width: 100%;
-        color: #D86000;
-        line-height: 50px;
-        margin-top: 50px;
-    }
-    
-    .social-media-btn {
-        justify-content: center;
-        display: flex;
-        margin-top: 50px;
-    }
-    
-    .fa {
-        margin: 0px 20px 0 0;
-        padding: 15px;
-        width: 60px;
-        height: 60px;
-        font-size: 30px;
-        text-align: center;
-        border-radius: 50%;
-        color: #D86000;
-        background-color: #222326;
-        text-decoration: none;
-        transition: all .3;
-    }
-    
-    .fa:hover {
-        color: #F09048;
-        cursor: pointer;
-        background-color: #424242;
-    }
-    
-    a:hover {
-        text-decoration: none;
-    }
-    /* environment-style */
-    
-    .card-body-flex {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .environment-text {
-        font-size: 1.1rem;
-        color: white;
-    }
-    
-    .environment-card {
-        background-color: rgba(0, 0, 0, .5);
-        border: none;
-        z-index: 2;
-    }
-    
-    .environment-Info {
-        padding: .5rem 2rem;
-        font-weight: bold;
-        color: #F09048;
-        font-size: 1.2rem;
-        text-decoration: underline;
-    }
-    
-    .environment-Info:hover {
-        color: #189090;
-    }
-    
-    .environment-moreInfo {
-        color: #F09048;
-        border: 2px solid #F09048;
-        transition: all 0.3s;
-        font-weight: 400;
-    }
-    
-    .environment-moreInfo:hover {
-        color: white;
-        border-color: #189090;
-        background-color: #189090;
-    }
-    
-    .no-stretch {
-        align-items: flex-start;
-    }
-    
-    .environment-bg {
-        width: 150%;
-        z-index: 0;
-        position: absolute;
-        top: -150px;
-        left: -100px;
-    }
-    /* employees-style */
-    
-    .employee-name {
-        font-size: 2em;
-        font-weight: 600;
-        background-color: aquamarine;
-    }
-    
-    .no-border {
-        border: none;
-    }
-    
-    .avatar {
-        border-radius: 50%;
-        width: 200px;
-        height: 200px;
-        border: 8px solid #D86000;
-    }
-    
-    #header-button {
-        font-family: 'Sanomat Grab Web Regular', sans-serif;
-        font-size: 1.146em;
-        font-weight: 400;
-        color: #D86000;
-        border-color: #D86000;
-    }
-    
-    #header-button:hover {
-        background-color: black
-    }
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+
+/* header style */
+
+.header-style {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 200px;
+    color: #F09048;
+    border: 2px solid rgba(48, 24, 24, .9);
+    background-color: rgba(48, 24, 24, .9);
+    padding: 20px 0px;
+    margin: 0px auto;
+    width: 60rem;
+    height: 18rem;
+}
+
+.header-title {
+    font-size: 60px;
+    font-family: 'Sanomat Grab Web Regular', sans-serif;
+    padding-bottom: 10px;
+    color: #F09048;
+    text-align: center;
+}
+
+.header-subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Sanomat Grab Web Regular', sans-serif;
+    letter-spacing: 1px;
+    padding-bottom: 25px;
+    color: #F09048;
+    text-align: center;
+}
+
+
+/* footer style */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+li {
+    list-style: none;
+    color: #F09048;
+}
+
+li:hover {
+    color: #D86000;
+    cursor: pointer;
+}
+
+.footer-links {}
+
+.list-header {
+    width: 100%;
+    color: #D86000;
+    line-height: 50px;
+    margin-top: 50px;
+}
+
+.social-media-btn {
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+}
+
+.fa {
+    margin: 0px 20px 0 0;
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: #D86000;
+    text-decoration: none;
+    transition: all .3;
+}
+
+.fa:hover {
+    color: #F09048;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* environment-style */
+
+.card-body-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.environment-text {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.environment-card {
+    background-color: rgba(0, 0, 0, .5);
+    border: none;
+    z-index: 2;
+}
+
+.environment-Info {
+    padding: .5rem 2rem;
+    font-weight: bold;
+    color: #F09048;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.environment-Info:hover {
+    color: #189090;
+}
+
+.environment-moreInfo {
+    color: #F09048;
+    border: 2px solid #F09048;
+    transition: all 0.3s;
+    font-weight: 400;
+}
+
+.environment-moreInfo:hover {
+    color: white;
+    border-color: #189090;
+    background-color: #189090;
+}
+
+.no-stretch {
+    align-items: flex-start;
+}
+
+.environment-bg {
+    width: 150%;
+    z-index: 0;
+    position: absolute;
+    top: -150px;
+    left: -100px;
+}
+
+
+/* employees-style */
+
+.employee-name {
+    font-size: 2em;
+    font-weight: 600;
+    background-color: aquamarine;
+}
+
+.no-border {
+    border: none;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 8px solid #D86000;
+}
+
+#header-button {
+    font-family: 'Sanomat Grab Web Regular', sans-serif;
+    font-size: 1.146em;
+    font-weight: 400;
+    color: #F09048;
+    border-color: #F09048;
+}
+
+#header-button:hover {
+    color: white;
+    border-color: #189090;
+    background-color: #189090;
+}
+
+
+/* footer style */
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 30px;
+}
+
+footer li {
+    list-style: none;
+    color: #F09048;
+}
+
+footer li:hover {
+    color: #189090;
+    cursor: pointer;
+}
+
+.list-header {
+    width: 150px;
+    color: #D86000;
+    line-height: 50px;
+    margin-top: 50px;
+    padding-bottom: 70px;
+}
+
+.social-media-btn {
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+}
+
+.fa {
+    margin: 0px 20px 0 0;
+    padding: 15px;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 50%;
+    color: #D86000;
+    text-decoration: none;
+}
+
+.fa:hover {
+    color: #189090;
+    cursor: pointer;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+
+/* environment-style */
+
+.card-body-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* employees-style */
+
+.employee-name {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.no-border {
+    border: none;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 200px;
+}
+
+#header-button {
+    font-family: 'Sanomat Grab Web Regular', sans-serif;
+    font-size: 1.146em;
+    font-weight: 400;
+    color: #D86000;
+    border-color: #D86000;
+}
