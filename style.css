@@ -174,9 +174,6 @@ footer li:hover{
     margin-top: 50px;
     padding-bottom: 70px;
 }
-
-<<<<<<< HEAD
-=======
 .social-media-btn {
     justify-content: center;
     display: flex;
@@ -200,7 +197,7 @@ footer a:hover {
     text-decoration: none;
 }
 
->>>>>>> 2e6c39ea0b37a723919f4fc34e2581b7599f9e7c
+
 /* environment-style */
 
 .card-body-flex {
@@ -225,9 +222,6 @@ footer a:hover {
 .avatar {
     border-radius: 50%;
     width: 200px;
-<<<<<<< HEAD
-}
-=======
 }
 
 #header-button {
@@ -241,4 +235,3 @@ footer a:hover {
 #header-button:hover {
     background-color: black;
 }
->>>>>>> 2e6c39ea0b37a723919f4fc34e2581b7599f9e7c
