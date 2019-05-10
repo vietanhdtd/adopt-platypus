@@ -27,11 +27,21 @@
         height: 650px;
     }
     
+    .environment-section {
+        background-image: url("img/environment-background.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
     .environment {
         min-height: 300px;
         display: flex;
         justify-content: space-around;
         text-align: center;
+        position: relative;
+        overflow: hidden;
     }
     
     .employees {
@@ -180,19 +190,52 @@
         align-items: center;
     }
     
-    .environment-title {
-        font-weight: 700;
-        color: white;
-        font-size: 2rem;
-    }
-    
     .environment-text {
         font-size: 1.1rem;
+        color: white;
     }
     
     .environment-card {
-        background-color: rgba(216, 96, 0, .8);
+        background-color: rgba(0, 0, 0, .5);
         border: none;
+        z-index: 2;
+    }
+    
+    .environment-Info {
+        padding: .5rem 2rem;
+        font-weight: bold;
+        color: #F09048;
+        font-size: 1.2rem;
+        text-decoration: underline;
+    }
+    
+    .environment-Info:hover {
+        color: #189090;
+    }
+    
+    .environment-moreInfo {
+        color: #F09048;
+        border: 2px solid #F09048;
+        transition: all 0.3s;
+        font-weight: 400;
+    }
+    
+    .environment-moreInfo:hover {
+        color: white;
+        border-color: #189090;
+        background-color: #189090;
+    }
+    
+    .no-stretch {
+        align-items: flex-start;
+    }
+    
+    .environment-bg {
+        width: 150%;
+        z-index: 0;
+        position: absolute;
+        top: -150px;
+        left: -100px;
     }
     /* employees-style */
     
