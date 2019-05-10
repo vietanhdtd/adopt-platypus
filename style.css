@@ -1,4 +1,5 @@
-/*page-structure*/
+
+/* page-structure */
 
 * {
     margin: 0;
@@ -42,7 +43,7 @@ header {
 }
 
 footer {
-    background-color: black;
+    background-color: #301818;
     min-height: 100px;
     color: white;
 }
@@ -147,33 +148,59 @@ nav ul {
 }
 
 /* footer style */
-.container {
+
+
+footer .container  {
     display: flex;
     justify-content: space-between;
     margin: auto;
-    
+    padding-top: 30px;
 }
 
-li {
+footer li {
     list-style: none;
     color: #F09048;
 }
-li:hover{
-    color: #D86000;
+
+footer li:hover{
+    color: #189090;
     cursor: pointer;
 }
 
-.footer-links {
- 
-}
-
 .list-header {
-    width: 100%;
+    width: 150px;
     color: #D86000;
     line-height: 50px;
     margin-top: 50px;
+    padding-bottom: 70px;
 }
 
+<<<<<<< HEAD
+=======
+.social-media-btn {
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+}
+
+.fa {
+    margin: 0px 20px 0 0;
+    padding: 15px;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 50%;
+    color: #D86000;
+    text-decoration: none;
+}
+.fa:hover{
+    color: #189090;
+    cursor: pointer;
+}
+footer a:hover {
+    text-decoration: none;
+}
+
+>>>>>>> 2e6c39ea0b37a723919f4fc34e2581b7599f9e7c
 /* environment-style */
 
 .card-body-flex {
@@ -198,4 +225,20 @@ li:hover{
 .avatar {
     border-radius: 50%;
     width: 200px;
+<<<<<<< HEAD
 }
+=======
+}
+
+#header-button {
+    font-family: 'Sanomat Grab Web Regular', sans-serif;
+    font-size: 1.146em;
+    font-weight: 400;
+    color: #D86000;
+    border-color: #D86000;
+}
+
+#header-button:hover {
+    background-color: black;
+}
+>>>>>>> 2e6c39ea0b37a723919f4fc34e2581b7599f9e7c
