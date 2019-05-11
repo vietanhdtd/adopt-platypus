@@ -89,6 +89,7 @@ footer {
 
 .search-icon {
     border: none;
+    font-size: 1.20rem;
 }
 
 .res-invisible-1 {
@@ -115,6 +116,12 @@ nav ul {
     align-items: center;
 }
 
+.nav-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 
 /* header style */
 
@@ -131,7 +138,17 @@ nav ul {
     padding: 20px 0px;
     margin: 0px auto;
     width: 60rem;
-    height: 18rem;
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+    .header-subtitle {
+        max-width: 300px;
+    }
 }
 
 .header-title {
@@ -140,6 +157,7 @@ nav ul {
     padding-bottom: 10px;
     color: #F09048;
     text-align: center;
+    line-height: 1em;
 }
 
 .header-subtitle {
@@ -354,7 +372,7 @@ footer a:hover {
     text-decoration: none;
 }
 
-
+s
 /* employees-style */
 
 .employee-name {
@@ -371,10 +389,11 @@ footer a:hover {
     width: 200px;
 }
 
-#header-button {
+
+/* #header-button {
     font-family: 'Sanomat Grab Web Regular', sans-serif;
     font-size: 1.146em;
     font-weight: 400;
     color: #D86000;
     border-color: #D86000;
-}
+} */
