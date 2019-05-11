@@ -224,17 +224,17 @@ a:hover {
 }
 
 .environment-card {
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .7);
     border: none;
     z-index: 2;
 }
 
 .environment-Info {
-    padding: .5rem 2rem;
+    padding: .3rem 2rem;
     font-weight: bold;
     color: #F09048;
     font-size: 1.2rem;
-    text-decoration: underline;
+    border-bottom: 2px solid;
 }
 
 .environment-Info:hover {
@@ -246,6 +246,7 @@ a:hover {
     border: 2px solid #F09048;
     transition: all 0.3s;
     font-weight: 400;
+    margin-top: auto;
 }
 
 .environment-moreInfo:hover {
@@ -351,16 +352,6 @@ footer li:hover {
 
 footer a:hover {
     text-decoration: none;
-}
-
-
-/* environment-style */
-
-.card-body-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 }
 
 
