@@ -1,5 +1,4 @@
-
-/* page-structure */
+/*page-structure*/
 
 * {
     margin: 0;
@@ -25,7 +24,14 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 650px;
+}
+
+.environment-section {
+    background-image: url("img/environment-background.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .environment {
@@ -33,6 +39,8 @@ header {
     display: flex;
     justify-content: space-around;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .employees {
@@ -62,7 +70,7 @@ footer {
 }
 
 .nav-linkto:hover {
-    color: #189090 !important;
+    color: #189090!important;
 }
 
 .btn-nav {
@@ -134,6 +142,7 @@ input:focus {
     display: none;
 }
 
+<<<<<<< HEAD
 .res-invisible-2 {
     display: inline-flex;
     padding-right: 1em;
@@ -141,6 +150,21 @@ input:focus {
 
 @media screen and (max-width: 991px) {
     .res-invisible-1 {display: block;}
+=======
+@media screen and (max-width: 989px) {
+    .res-invisible-2 {
+        display: none;
+    }
+    .res-invisible-1 {
+        display: block;
+    }
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+>>>>>>> 15c0c271ebfdc96217e4c40b3965fe1a853e5b05
 }
 
 @media screen and (max-width: 991px) {
@@ -238,6 +262,20 @@ button:focus {
     width: 60rem;
 }
 
+.aboutus-header-style {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    color: #F09048;
+    border: 2px solid rgba(48, 24, 24, .9);
+    background-color: rgba(48, 24, 24, .9);
+    padding: 20px 0px;
+    margin: 100px auto 30px auto;
+    width: 60rem;
+}
+
 header .container {
     display: flex;
     justify-content: center;
@@ -284,6 +322,155 @@ header .container {
     text-align: center;
 }
 
+
+/* footer style */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+li {
+    list-style: none;
+    color: #F09048;
+}
+
+li:hover {
+    color: #D86000;
+    cursor: pointer;
+}
+
+.footer-links {}
+
+.list-header {
+    width: 100%;
+    color: #D86000;
+    line-height: 50px;
+    margin-top: 50px;
+}
+
+.social-media-btn {
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+}
+
+.fa {
+    margin: 0px 20px 0 0;
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: #D86000;
+    text-decoration: none;
+    transition: all .3;
+}
+
+.fa:hover {
+    color: #F09048;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* environment-style */
+
+.card-body-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.environment-text {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.environment-card {
+    background-color: rgba(0, 0, 0, .7);
+    border: none;
+    z-index: 2;
+}
+
+.environment-Info {
+    padding: .3rem 2rem;
+    font-weight: bold;
+    color: #F09048;
+    font-size: 1.2rem;
+    border-bottom: 2px solid;
+}
+
+.environment-Info:hover {
+    color: #189090;
+}
+
+.environment-moreInfo {
+    color: #F09048;
+    border: 2px solid #F09048;
+    transition: all 0.3s;
+    font-weight: 400;
+    margin-top: auto;
+}
+
+.environment-moreInfo:hover {
+    color: white;
+    border-color: #189090;
+    background-color: #189090;
+}
+
+.no-stretch {
+    align-items: flex-start;
+}
+
+.environment-bg {
+    width: 150%;
+    z-index: 0;
+    position: absolute;
+    top: -150px;
+    left: -100px;
+}
+
+
+/* employees-style */
+
+.employee-name {
+    font-size: 2em;
+    font-weight: 600;
+    background-color: aquamarine;
+}
+
+.employee-name-aboutus {
+    font-size: 2em;
+    font-weight: 600;
+    background-color: rgb(0, 248, 236);
+    ;
+}
+
+.no-border {
+    border: none;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 8px solid #D86000;
+}
+
+.avatar-aboutus {
+    border-radius: 10%;
+    width: 75%;
+    height: auto;
+    border: 8px solid rgb(0, 248, 236);
+}
+
 #header-button {
     font-family: 'Sanomat Grab Web Regular', sans-serif;
     font-size: 1.146em;
@@ -299,10 +486,10 @@ header .container {
     background-color: #189090;
 }
 
+
 /* footer style */
 
-
-footer .container  {
+footer .container {
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -314,7 +501,7 @@ footer li {
     color: #F09048;
 }
 
-footer li:hover{
+footer li:hover {
     color: #189090;
     cursor: pointer;
 }
@@ -326,6 +513,7 @@ footer li:hover{
     margin-top: 50px;
     padding-bottom: 70px;
 }
+
 .social-media-btn {
     justify-content: center;
     display: flex;
@@ -341,25 +529,17 @@ footer li:hover{
     color: #D86000;
     text-decoration: none;
 }
-.fa:hover{
+
+.fa:hover {
     color: #189090;
     cursor: pointer;
 }
+
 footer a:hover {
     text-decoration: none;
 }
 
-
-/* environment-style */
-
-.card-body-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
+s
 /* employees-style */
 
 .employee-name {
@@ -371,7 +551,15 @@ footer a:hover {
     border: none;
 }
 
-.avatar {
-    border-radius: 50%;
-    width: 200px;
+.aboutus-card {
+    min-width: 50%;
 }
+
+
+/* #header-button {
+    font-family: 'Sanomat Grab Web Regular', sans-serif;
+    font-size: 1.146em;
+    font-weight: 400;
+    color: #D86000;
+    border-color: #D86000;
+} */
