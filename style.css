@@ -173,10 +173,6 @@ nav ul {
     .sm-pl {padding-left: 2em;}
 }
 
-/* @media screen and (max-width: 575px) {
-    .navbar-toggler {margin-right: .75em;}
-} */
-
 .navbar-toggler {
     padding-top: .65rem;
     padding-bottom: .65rem;
