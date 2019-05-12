@@ -471,19 +471,3 @@ s
     color: #D86000;
     border-color: #D86000;
 } */
-
-@media (max-width: 767.98px) {
-    #div-mobile {   display: block; }
-    #div-tablet {   display: none; }
-    #div-desktop {  display: none; }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-    #div-mobile {   display: block; }
-    #div-tablet {   display: block; }
-    #div-desktop {  display: none; }
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    #div-mobile {   display: block; }
-    #div-tablet {   display: block; }
-    #div-desktop {  display: block; }
-}
