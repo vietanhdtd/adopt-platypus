@@ -18,8 +18,16 @@ nav {
 
 header {
     background-color: white;
-    min-height: 400px;
+    min-height: 600px;
     background-image: url("img/platypus-hero2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-aboutus {
+    background-image: url("img/about-us-bg.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -38,6 +46,7 @@ header {
     min-height: 300px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -48,6 +57,7 @@ header {
     display: flex;
     justify-content: space-around;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 footer {
@@ -146,8 +156,8 @@ nav ul {
     align-items: center;
     position: relative;
     color: #F09048;
-    border: 2px solid rgba(48, 24, 24, .9);
-    background-color: rgba(48, 24, 24, .9);
+    border: 2px solid rgba(48, 24, 24, .8);
+    background-color: rgba(48, 24, 24, .8);
     padding: 20px 0px;
     margin: 100px auto 30px auto;
     width: 60rem;
@@ -247,6 +257,7 @@ a:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background-color: rgba(0, 0, 0, .7);
 }
 
 .environment-text {
@@ -255,7 +266,7 @@ a:hover {
 }
 
 .environment-card {
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, 0);
     border: none;
     z-index: 2;
 }
@@ -320,8 +331,8 @@ a:hover {
 
 .avatar {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 75%;
+    height: auto;
     border: 8px solid #D86000;
 }
 
@@ -501,6 +512,10 @@ s
 }
 
 .aboutus-card {
+    min-width: 25%;
+}
+
+.aboutus-page-card {
     min-width: 50%;
 }
 
