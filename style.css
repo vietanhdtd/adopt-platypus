@@ -357,6 +357,7 @@ a:hover {
     background-color: #189090;
 }
 
+
 /* Rescued section style and What is a platypus*/
 
 .row {
@@ -377,75 +378,99 @@ a:hover {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    #div-mobile {   display: block; }
-    #div-tablet {   display: none; }
-    #div-desktop {  display: none; }
+    #div-mobile {
+        display: block;
+    }
+    #div-tablet {
+        display: none;
+    }
+    #div-desktop {
+        display: none;
+    }
     .column {
         flex: 100%;
         max-width: 100%;
     }
-    #animal-icon{
+    #animal-icon {
         width: 75px;
         height: 75px;
     }
-    #equation-icon{
+    #equation-icon {
         width: 50px;
         height: 50px;
+    }
+    header {
+        min-height: 700px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    #div-mobile {   display: block; }
-    #div-tablet {   display: block; }
-    #div-desktop {  display: none; }
+    #div-mobile {
+        display: block;
+    }
+    #div-tablet {
+        display: block;
+    }
+    #div-desktop {
+        display: none;
+    }
     .column {
         flex: 50%;
         max-width: 100%;
     }
-    #animal-icon{
+    #animal-icon {
         width: 125px;
         height: 125px;
     }
-    #equation-icon{
+    #equation-icon {
         width: 90px;
         height: 90px;
     }
 }
 
 @media (min-width: 992px) {
-    #div-mobile {   display: block; }
-    #div-tablet {   display: block; }
-    #div-desktop {  display: block; }
+    #div-mobile {
+        display: block;
+    }
+    #div-tablet {
+        display: block;
+    }
+    #div-desktop {
+        display: block;
+    }
     .column {
         flex: 100%;
         max-width: 33.33%;
     }
-    #animal-icon{
+    #animal-icon {
         width: 200px;
         height: 200px;
     }
-    #equation-icon{
+    #equation-icon {
         width: 150px;
         height: 150px;
     }
 }
 
 @media (max-width: 576px) {
-    #animal-icon{
+    #animal-icon {
         width: 75px;
         height: 75px;
     }
-    #equation-icon{
+    #equation-icon {
         width: 50px;
         height: 50px;
     }
 }
-.m-3{
+
+.m-3 {
     margin: 0rem!important;
 }
-.m-3{
+
+.m-3 {
     margin: 3px!important;
 }
+
 
 /* footer style */
 
