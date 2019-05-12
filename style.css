@@ -346,7 +346,7 @@ a:hover {
     background-color: #189090;
 }
 
-/* Rescued section style*/
+/* Rescued section style and What is a platypus*/
 
 .row {
     display: flex;
@@ -373,6 +373,10 @@ a:hover {
         flex: 100%;
         max-width: 100%;
     }
+    .equation-icon{
+        width: 75px;
+        height: 75px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -383,6 +387,10 @@ a:hover {
         flex: 50%;
         max-width: 100%;
     }
+    .equation-icon{
+        width: 125px;
+        height: 125px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -392,6 +400,17 @@ a:hover {
     .column {
         flex: 100%;
         max-width: 33.33%;
+    }
+    .equation-icon{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .equation-icon{
+        width: 75px;
+        height: 75px;
     }
 }
 
