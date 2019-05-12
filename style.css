@@ -19,6 +19,7 @@ nav {
 header {
     background-color: white;
     min-height: 400px;
+    height: 650px;
     background-image: url("img/platypus-hero2.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -142,7 +143,6 @@ input:focus {
     display: none;
 }
 
-<<<<<<< HEAD
 .res-invisible-2 {
     display: inline-flex;
     padding-right: 1em;
@@ -150,25 +150,14 @@ input:focus {
 
 @media screen and (max-width: 991px) {
     .res-invisible-1 {display: block;}
-=======
-@media screen and (max-width: 989px) {
-    .res-invisible-2 {
-        display: none;
-    }
-    .res-invisible-1 {
-        display: block;
-    }
-}
-
-.nav-flex {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
->>>>>>> 15c0c271ebfdc96217e4c40b3965fe1a853e5b05
 }
 
 @media screen and (max-width: 991px) {
     .res-invisible-2 {display: none;}
+}
+
+@media screen and (max-width: 767px) {
+    .sm-pl {margin-left: 20px;}
 }
 
 nav ul {
@@ -184,18 +173,34 @@ nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     width: 30em;
 }
 
 @media screen and (min-width: 992px) {
-    .nav-row {display:flex; justify-content: normal;}
+    .nav-row {display:flex; justify-content: normal; align-items: center;}
     .sm-pl {padding-left: 1em;}
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+    .navbar-nav {width: 19em;}
+}
+
+@media screen and (max-width: 766px) {
+    .navbar-nav {width: 12em;}
 }
 
 @media screen and (max-width: 575px) {
     .sm-pl {padding-left: 2em;}
 }
+
+@media screen and (max-width: 767px) {
+    .navbar-toggler {margin-right: 20px;}
+}
+
+@media screen and (max-width: 575px) {
+    .navbar-toggler {margin-right: 40px;}
+}
+
 
 .navbar-toggler {
     padding-top: .65rem;
@@ -276,6 +281,10 @@ button:focus {
     width: 60rem;
 }
 
+header{
+    height: 675px;
+}
+
 header .container {
     display: flex;
     justify-content: center;
@@ -287,9 +296,13 @@ header .container {
     }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 767px) and (min-width: 577px) {
     .header-style {margin-bottom: 5em;}
-    #header-button {margin-bottom: 100px !important;}
+    #header-button {margin-bottom: 1em !important;}
+}
+
+@media (max-width: 576px) {
+    #header-button {margin-bottom: 1em !important;}
 }
 
 /* @media (max-width: 991px) {
@@ -299,8 +312,6 @@ header .container {
 @media (max-width: 767px) {
     .header-style {padding: 0px; position: relative; top: 140px;}
 }
-
-
 
 .header-title {
     font-size: 60px;
@@ -313,7 +324,7 @@ header .container {
 }
 
 .header-subtitle {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     font-family: 'Sanomat Grab Web Regular', sans-serif;
     letter-spacing: 1px;
@@ -323,63 +334,16 @@ header .container {
 }
 
 
-/* footer style */
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-}
-
-li {
-    list-style: none;
-    color: #F09048;
-}
-
-li:hover {
-    color: #D86000;
-    cursor: pointer;
-}
-
-.footer-links {}
-
-.list-header {
-    width: 100%;
-    color: #D86000;
-    line-height: 50px;
-    margin-top: 50px;
-}
-
-.social-media-btn {
-    justify-content: center;
-    display: flex;
-    margin-top: 50px;
-}
-
-.fa {
-    margin: 0px 20px 0 0;
-    padding: 15px;
-    width: 60px;
-    height: 60px;
-    font-size: 30px;
-    text-align: center;
-    border-radius: 50%;
-    color: #D86000;
-    text-decoration: none;
-    transition: all .3;
-}
-
-.fa:hover {
-    color: #F09048;
-    cursor: pointer;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-
 /* environment-style */
+
+@media (max-width: 991px) {
+    .environment {display: grid; flex-direction: column;}
+    .environment-padding {padding: 5em 0 !important;}
+}
+
+.environment-padding {
+    padding: 9em 0;
+}
 
 .card-body-flex {
     display: flex;
@@ -397,6 +361,7 @@ a:hover {
     background-color: rgba(0, 0, 0, .7);
     border: none;
     z-index: 2;
+    margin-bottom: 25px;
 }
 
 .environment-Info {
@@ -405,6 +370,10 @@ a:hover {
     color: #F09048;
     font-size: 1.2rem;
     border-bottom: 2px solid;
+}
+
+.btn:focus {
+    box-shadow: none;
 }
 
 .environment-Info:hover {
@@ -477,7 +446,6 @@ a:hover {
     font-weight: 400;
     color: #F09048;
     border-color: #F09048;
-    margin-bottom: .75em !important;
 }
 
 #header-button:hover {
@@ -486,6 +454,99 @@ a:hover {
     background-color: #189090;
 }
 
+/* Rescued section style and What is a platypus*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #div-mobile {   display: block; }
+    #div-tablet {   display: none; }
+    #div-desktop {  display: none; }
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+    #animal-icon{
+        width: 75px;
+        height: 75px;
+    }
+    #equation-icon{
+        width: 1.5em;
+        position: relative;
+        bottom: 2em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #div-mobile {   display: block; }
+    #div-tablet {   display: block; }
+    #div-desktop {  display: none; }
+    .column {
+        flex: 50%;
+        max-width: 100%;
+    }
+    #animal-icon{
+        width: 125px;
+        height: 125px;
+    }
+    #equation-icon{
+        width: 2em;
+        position: relative;
+        bottom: .5em;
+        margin: 0px .5em !important;
+    }
+}
+
+@media (min-width: 992px) {
+    #div-mobile {   display: block; }
+    #div-tablet {   display: block; }
+    #div-desktop {  display: block; }
+    .column {
+        flex: 100%;
+        max-width: 33.33%;
+    }
+    #animal-icon{
+        width: 200px;
+        height: 200px;
+    }
+    #equation-icon{
+        width: 3em;
+        margin: 0 2em !important;
+    }
+}
+
+@media (max-width: 576px) {
+    #animal-icon{
+        width: 75px;
+        height: 75px;
+    }
+    #equation-icon{
+        width: 1.5em;
+        position: relative;
+        bottom: 2em;
+    }
+}
+.m-3{
+    margin: 0rem!important;
+}
+.m-3{
+    margin: 3px!important;
+}
 
 /* footer style */
 
