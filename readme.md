@@ -1,6 +1,6 @@
 ## Project 1: Adopt Platypus ##
 
-A website that will help people to adopt a platypus. It has info on how to care for platypus. It also has about us section. 
+A website that will help people to adopt a platypus. It has info on how to care for platypus.
 
 Time spent: 3 days
 
@@ -28,7 +28,7 @@ https://hopeful-kirch-b8202b.netlify.com
 
 ## License ##
 
-* Copyright 2017 - hoinganmotti@gmail.com
+* Copyright 2019 - vietanh.phurieng@gmail.com
 
 * Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
