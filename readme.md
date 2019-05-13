@@ -9,7 +9,7 @@ Time spent: 3 days
 * The following required functionalities is completed:
 
 * The web page is with responsive settings.
-* About Page in landing page.
+* About Page included in landing page.
 
 ## Built with ##
 
