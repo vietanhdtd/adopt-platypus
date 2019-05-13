@@ -97,27 +97,76 @@ footer {
 }
 
 .search-icon {
+    font-size: .89em;
+    margin: 0 0 0 6 !important;
     border: none;
-    font-size: 1.20rem;
+}
+
+nav .fa, .far, .fas {
+    color: #f09048;
+    font-size: 1.146em;
+}
+
+nav .fa, .far, .fas:hover {
+    color: #189090;
+    font-size: 1.146em;
+}
+
+.search-input{
+    color: #F09048;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: transparent;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}
+
+/* 'This removes out blue border when clicking on the search bar' -Phil*/
+input:focus {
+    outline:none;
+}
+
+.searchbar:hover > .search-input{
+    background: transparent;
+    border: 2px solid #F09048;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Sanomat Grab Web Regular', sans-serif;
+    padding: 0 10px;
+    width: 175px;
+    caret-color: #F09048;
+    transition: width 0.4s linear;
+    line-height: 2.25em;
+}
+
+.searchbar:hover > .search-icon{
+    background: transparent;
+    color: #F09048;
 }
 
 .res-invisible-1 {
     display: none;
 }
 
-@media screen and (max-width: 989px) {
-    .res-invisible-2 {
-        display: none;
-    }
-    .res-invisible-1 {
-        display: block;
-    }
+.res-invisible-2 {
+    display: inline-flex;
+    padding-right: 1em;
 }
 
-.nav-flex {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+@media screen and (max-width: 991px) {
+    .res-invisible-1 {display: block;}
+}
+
+@media screen and (max-width: 991px) {
+    .res-invisible-2 {display: none;}
+}
+
+@media screen and (max-width: 767px) {
+    .sm-pl {margin-left: 20px;}
 }
 
 nav ul {
@@ -125,10 +174,88 @@ nav ul {
     align-items: center;
 }
 
+.fixed-top {
+    display: inline-flex;
+}
+
 .nav-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 30em;
+}
+
+@media screen and (min-width: 992px) {
+    .nav-row {display:flex; justify-content: normal; align-items: center;}
+    .sm-pl {padding-left: 1em;}
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+    .navbar-nav {width: 19em;}
+}
+
+@media screen and (max-width: 766px) {
+    .navbar-nav {width: 12em;}
+}
+
+@media screen and (max-width: 575px) {
+    .sm-pl {padding-left: 2em;}
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-toggler {margin-right: 20px;}
+}
+
+@media screen and (max-width: 575px) {
+    .navbar-toggler {margin-right: 40px;}
+}
+
+
+.navbar-toggler {
+    padding-top: .65rem;
+    padding-bottom: .65rem;
+    outline: none;
+}
+
+#fix-hamburger {
+    display: inline-grid;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    float: right;
+}
+
+button:focus {
+    outline: none;
+}
+
+.nav-inline {
+    display: flex;
+}
+
+#search-inline {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (min-width: 576px) {
+    .form-inline .form-control {margin-right: 0px !important;}
+}
+
+.form-inline {
+    margin-right: auto;
+}
+
+@media screen and (max-width: 575px) {
+    #res-search-icon {margin: 0px !important;}
+}
+
+.form-control {
+    font-family: 'Sanomat Grab Web Regular', sans-serif;
+    font-size: 1.146em;
+    font-weight: 400;
+    height: 1.9em;
+    background-color: transparent;
+    border: 2px solid #F09048;
 }
 
 
@@ -140,7 +267,7 @@ nav ul {
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: 200px;
+    top: 170px;
     color: #F09048;
     border: 2px solid rgba(48, 24, 24, .9);
     background-color: rgba(48, 24, 24, .9);
@@ -156,11 +283,15 @@ nav ul {
     align-items: center;
     position: relative;
     color: #F09048;
-    border: 2px solid rgba(48, 24, 24, .8);
-    background-color: rgba(48, 24, 24, .8);
+    border: 2px solid rgba(48, 24, 24, .9);
+    background-color: rgba(48, 24, 24, .9);
     padding: 20px 0px;
     margin: 100px auto 30px auto;
     width: 60rem;
+}
+
+header{
+    height: 675px;
 }
 
 header .container {
@@ -174,17 +305,35 @@ header .container {
     }
 }
 
+@media screen and (max-width: 767px) and (min-width: 577px) {
+    .header-style {margin-bottom: 5em;}
+    #header-button {margin-bottom: 1em !important;}
+}
+
+@media (max-width: 576px) {
+    #header-button {margin-bottom: 1em !important;}
+}
+
+/* @media (max-width: 991px) {
+    .header-style {padding: 0px; position: relative; top: 150px;}
+} */
+
+@media (max-width: 767px) {
+    .header-style {padding: 0px; position: relative; top: 140px;}
+}
+
 .header-title {
     font-size: 60px;
     font-family: 'Sanomat Grab Web Regular', sans-serif;
-    padding-bottom: 10px;
+    padding-top: .40em;
+    padding-bottom: .45em;
     color: #F09048;
     text-align: center;
     line-height: 1em;
 }
 
 .header-subtitle {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     font-family: 'Sanomat Grab Web Regular', sans-serif;
     letter-spacing: 1px;
