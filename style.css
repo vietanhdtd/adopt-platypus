@@ -347,7 +347,7 @@ header .container {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin: auto;
 }
 
@@ -609,6 +609,9 @@ a:hover {
     #equation-icon {
         width: 50px;
         height: 50px;
+    }
+    header {
+        min-height: 700px;
     }
 }
 
